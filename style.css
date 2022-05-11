@@ -257,6 +257,10 @@ ul {
 .w-50 {
     width: 50%;
 }
+
+.btn-shadow {
+    box-shadow: var(--box-shadow);
+}
 /* ------------- /global classes ---------------*/
 /* ------------- Media query ------------- */
 
@@ -283,6 +287,10 @@ ul {
 
     .md-mx-initial {
         margin: initial;
+    }
+
+    .md-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -319,6 +327,10 @@ ul {
     .lg-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+
+    .lg-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }
 
 /* for large screen xl (1280px) */
@@ -333,6 +345,11 @@ ul {
 
     #nav .flex-initial > ul button {
         display: inline-block !important;
+    }
+
+    .sm-px-10 {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
     }
 }
 
@@ -488,3 +505,70 @@ ul {
 }
 
 /* ------------- /card area style ---------------*/
+/* ------------- recent work area style ---------------*/
+
+#site-main .recent-work-area .images-flex .flex-item {
+    width: 320px;
+    margin-bottom: 50px;
+}
+
+#site-main .recent-work-area .images-flex .flex-item img {
+    border-radius: 10px;
+}
+/* ------------- /recent work area style ---------------*/
+/* ------------- /card area style ---------------*/
+
+#site-main .article-area .grid {
+    column-gap: 5em;
+}
+
+#site-main .article-area .card article {
+    border-radius: 10px;
+}
+/* ------------- /card area style ---------------*/
+/* ------------- /Ready area style ---------------*/
+
+#site-main .ready-area .flex {
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ------------- /Ready area style ---------------*/
+/* ------------- footer style ---------------*/
+
+#footer {
+    border-top: 2px solid var(--text-light);
+    margin-top: 8em;
+}
+
+#footer .grid {
+    column-gap: 3em;
+    padding: 6em 0;
+    border-bottom: 2px solid var(--text-light);
+}
+
+#footer .grid input.Subscribe-text {
+    border: none;
+    background-color: var(--text-light);
+    padding: 1em;
+    font-size: 1em;
+    color: var(--text-dark2);
+    font-family: var(--font-poppins);
+}
+
+#footer .grid input.Subscribe-text:focus {
+    border: none;
+    outline: none;
+}
+
+#footer .grid button.btn-go {
+    background-color: var(--text-light);
+    padding: 0 2em;
+    font-family: var(--font-poppins);
+}
+
+#footer .grid button.btn-go:hover {
+    background-color: var(--text-dark2);
+    color: var(--text-light);
+}
+/* ------------- /footer style ---------------*/
